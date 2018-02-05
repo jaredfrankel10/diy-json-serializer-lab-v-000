@@ -5,7 +5,7 @@
    <li class="productDescription">Description: <%= @product.description %></li>
    <li class="productPrice">Price: $<%= @product.price.to_f %></li>
  </ul>
- 
+
  <script type="text/javascript" charset="utf-8">
  $(function () {
    $(".js-next").on("click", function() {
@@ -15,7 +15,7 @@
        $(".productInventory").text(data["inventory"]);
        $(".productDescription").text(data["description"]);
        $(".productPrice").text(data["price"]);
- 
+
        $(".js-next").attr("data-id", data["id"]);
      });
    });
